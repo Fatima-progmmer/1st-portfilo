@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me - Frontend Developer</title>
+<style>
+     body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ff69b4;
+    z-index: 1000;
+    padding: 1rem;
+  }
+  .navbar a {
+    color: rgb(14, 13, 13);
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  .navbar a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease;
+    border-radius: 10px;
+  }
+  .about-section {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 100px;
+  }
+  .about-section h2 {
+    margin: 0;
+  }
+  .about-section p {
+    font-size: 1.2rem;
+  }
+  img {
+    width: 200px;
+    height: 230px;
+    border-radius: 50%; 
+  }
+  .hidden {
+    display: none;
+  }
+  button {
+    background-color: wheat;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  button:hover {
+    background-color: #ff69b4;
+    transition: 0.5s ease;
+    color: wheat;
+  }
+  footer{
+    text-align: center;
+    color: grey;
+  }
+  p{
+    margin-left: 200px;
+    margin-right: 200px;
+
+  }
+</style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="home.html" >Home</a>
+    <a href="about me.html">About</a>
+    <a href="eductaion.html" >Education</a>
+    <a href="skill.html">Skills</a>
+    <a href="contat me.html">Contact</a>
+  </nav>
+  <section class="about-section">
+   <img src="Screenshot 2024-06-06 100845.png" alt="">
+    <h2>About Me</h2>
+    <h3>Frontend Developer!</h3>
+    <p >Building the future,one line of code at a time.I am a  passionate developer with a love for creating 
+      user interface and responsive interfaces.
+    </p>
+    <button onclick="showMore()">Learn More</button>
+<div id="moreInfo" class="hidden">
+  <p>
+    Script you success,With the background in computer science and passionate for design.I bring to learn HTML CSS and javascript
+  </p>
+</div>
+  </section>
+  <footer>
+    <i>@Copyright reserved by Tanzeela</i>
+  </footer>
+  <script>
+    function showMore() {
+  var moreInfo = document.getElementById('moreInfo');
+  if (moreInfo.style.display === 'none') {
+    moreInfo.style.display = 'block';
+  } else {
+    moreInfo.style.display = 'none';
+  }
+}
+  </script>
+</body>
+</html>

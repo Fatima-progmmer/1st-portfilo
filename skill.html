@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills Chart</title>
+<style>
+    body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f7f7f7;
+    padding: 0px;
+    margin: 0px;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ff69b4;
+    z-index: 1000;
+    padding: 1rem;
+  }
+  .navbar a {
+    color: rgb(14, 13, 13);
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  .navbar a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease;
+    border-radius: 10px;
+  }
+  .skills-container {
+    width: 70%;
+    margin-top: 80px;
+    margin-left: 160px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+  }
+  .profskill ,.codeskill{
+    width: 45%;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 80px #ff69b4;
+    padding: 15px;
+  }
+  .profskill{
+    margin-left: 35px;
+  }
+  .skill {
+    margin: 1rem 0;
+  }
+  .skill-name {
+    font-weight: bold;
+  }
+  .skill-bar  {
+    height: 20px;
+    background-color: #ddd;
+    color: #ff69b4;
+    position: relative;
+    overflow: hidden;
+    opacity: 50;
+    transition: opacity 1.8s;
+  }
+  .skill-level {
+    height: 100%;
+    background-color: #ff69b4;
+    width: 0;
+    position: absolute;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    color: grey;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+</style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about me.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="skill.html">Skills</a>
+    <a href="contact me.html">Contact</a>
+  </nav>
+</div>
+<div class="skills-container">
+  <div class="codeskill">
+  <h2>Programming language</h2>
+  <div class="skill">
+    <div class="skill-name">HTML</div>
+    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+    90%
+  </div>
+  <div class="skill">
+    <div class="skill-name">CSS</div>
+    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+    80%
+  </div>
+  <div class="skill">
+    <div class="skill-name">Java script</div>
+    <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+    70%
+  </div>
+  <div class="skill">
+    <div class="skill-name">C++</div>
+    <div class="skill-bar"><div class="skill-level" style="width: 93%;"></div></div>
+    93%
+  </div>
+  <div class="skill">
+    <div class="skill-name">Bootstrap framework</div>
+    <div class="skill-bar"><div class="skill-level" style="width: 90%;">50%</div></div>
+    50%
+  </div>
+</div>
+    <div class="profskill">
+  <h2>Professional Skills</h2>
+  <div class="skill">
+    <div class="skill-name">Communication</div>
+    <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+    75%
+  </div>
+  <div class="skill">
+    <div class="skill-name">UI/UX design</div>
+    <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+    70%
+  </div>
+  <div class="skill">
+    <div class="skill-name">Interpersonal skill</div>
+    <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+    70%
+  </div>
+  <div class="skill">
+    <div class="skill-name">Problem solving </div>
+    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+    85%
+  </div>
+  <div class="skill">
+    <div class="skill-name">Team collaboration</div>
+    <div class="skill-bar"><div class="skill-level" style="width: 50%;"></div></div>
+    50%
+  </div>
+</div>
+</div>
+<footer>
+  <i>@Copyright reserved by Tanzeela</i>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var skillLevels = document.querySelectorAll('.skill-level');
+  skillLevels.forEach(function(skillLevel) {
+    var levelWidth = skillLevel.style.width;
+    skillLevel.style.width = '0';
+    setTimeout(function() {
+      skillLevel.style.width = levelWidth;
+    }, 500);
+  });
+});
+</script>
+
+</body>
+</html>

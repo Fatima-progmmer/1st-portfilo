@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Journey</title>
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ff69b4;
+    z-index: 1000;
+    padding: 1rem;
+  }
+  .navbar a {
+    color: rgb(14, 13, 13);
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  .navbar a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease;
+    border-radius: 10px;
+  }
+  footer{
+    text-align: center;
+    color: grey;
+    margin-top: 50px;
+  }
+  .timeline {
+    background-color:  #e1dddf;
+    box-shadow: inset 0px 0px 10px #ff80c0 ;
+    width: 45%;
+    margin-left: 200px;
+    margin-top: 100px;
+    padding-top: 40px;
+    padding-left:20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+  }
+  .timeline .event {
+    flex-basis: 45%;
+    border-left: 3px solid #ff69b4;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  .timeline .event:before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:#ff69b4;
+  }
+  .timeline .event h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  .timeline .event p {
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" >Home</a>
+    <a href="about me.html">About</a>
+    <a href="eductaion.html" >Education</a>
+    <a href="skill.html">Skills</a>
+    <a href="contat me.html">Contact</a>
+  </nav>
+  <div class="timeline">
+    <div class="one">
+    <div class="event">
+      <h3>2022</h3>
+      <p>I Passed and get a diploma in Professional computer with 92% from GVTI kotli </p>
+    </div>
+    <div class="event">
+      <h3>2017-2019</h3>
+      <p>I was passing out with 79% from Fatima jinnah college .Where I was the pre medical student.
+        where computer distract me</p>
+    </div>
+  </div>
+  <div class="two">
+    <div class="event">
+      <h3>2019-2022</h3>
+      <p>I was passing out with 69% from Fatima jinnah college .Where I was the computer science student</p>
+    </div>
+    <div class="event">
+      <h3>2022 - continue</h3>
+      <p>I am BS(IT) 3rd student .I'm passionate about expolring the latest technologies 
+        and innovate solution 
+      </p>
+    </div>
+  </div>
+</div>
+  <footer>
+    <i>@Copyright reserved by Tanzeela</i>
+  </footer>
+</body>
+</html>
